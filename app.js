@@ -21,7 +21,7 @@ app.use(function (err, req, res, next) {
     if (err.message === 'BAD_REQUEST') {
         res.status(400).send('Invalid params'); // TODO: can be more specific about the error
     } else {
-        res.sendStatus(500);
+        next(err);
     }
 });
 
