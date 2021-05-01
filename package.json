@@ -1,0 +1,24 @@
+{
+  "name": "discount-codes",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test-unit": "mocha tests/unit/ --recursive"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "randomstring": "^1.1.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "flow-bin": "^0.150.0",
+    "mocha": "^8.3.2"
+  }
+}
