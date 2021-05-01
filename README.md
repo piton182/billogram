@@ -5,7 +5,7 @@ A microservice responsible for discount codes.
 ## How-to run
 
 ```sh
-$ > PORT=3003 make start
+$ > docker-compose up --build
 ```
 
 ## API
@@ -38,7 +38,7 @@ type GenerateResponse = {|
 Generates 10 codes for Billogram all expiring in 10 sec.
 
 ```sh
-$>  node -e "console.log(Date.now() + 10000)" | { read ts ; curl h"ttp://localhost:3003/generate?brand=billogram&count=10&expires=$ts "; }
+$> node -e "console.log(Date.now() + 10000)" | { read ts ; curl h"ttp://localhost:3003/generate?brand=billogram&count=10&expires=$ts "; }
 ```
 
 ### /fetch
