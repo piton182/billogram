@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  discount-codes:
+    build: .
+    image: billogram/discount-codes:v1
+    ports:
+      - "3003:3000"
