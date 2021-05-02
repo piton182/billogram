@@ -3,7 +3,7 @@
 node_modules:
 	npm i
 
- build: node_modules
+build: node_modules
 	npx flow
 	npm run test-unit
 
